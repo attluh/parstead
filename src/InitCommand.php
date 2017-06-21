@@ -32,13 +32,20 @@ class InitCommand extends Command
             throw new InvalidArgumentException('Homestead has already been initialized.');
         }
 
+        $output->writeln('<comment>Parstead config path:</comment> <info>'. homestead_path() . '</info>');
+
         mkdir(homestead_path());
 
         copy(__DIR__.'/stubs/Homestead.yaml', homestead_path().'/Homestead.yaml');
         copy(__DIR__.'/stubs/after.sh', homestead_path().'/after.sh');
         copy(__DIR__.'/stubs/aliases', homestead_path().'/aliases');
+        
+        if (is_dir(homestead_path())) {
+            $output->writeln('<comment>Creating Homestead.yaml file...</comment> <info>✔</info>');
+            $output->writeln('<comment>Homestead.yaml file created at:</comment> '.homestead_path().'/Homestead.yaml');
+        } else {
+            $output->writeln('<error>X</error> <comment>Could not initialize Parstead</comment>');
+        }
 
-        $output->writeln('<comment>Creating Homestead.yaml file...</comment> <info>✔</info>');
-        $output->writeln('<comment>Homestead.yaml file created at:</comment> '.homestead_path().'/Homestead.yaml');
     }
 }
