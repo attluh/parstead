@@ -1,6 +1,6 @@
 {
-    "name": "laravel/homestead",
-    "description": "A virtual machine for web artisans.",
+    "name": "attluh/parstead",
+    "description": "A virtual machine for Parlevelians.",
     "require": {
         "php": ">=5.4",
         "symfony/console": "~2.0 || ~3.0",
@@ -9,13 +9,13 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Taylor Otwell",
-            "email": "taylorotwell@gmail.com"
+            "name": "Ashley Reno",
+            "email": "attluh@gmail.com"
         }
     ],
     "autoload": {
         "psr-4": {
-            "Laravel\\Homestead\\": "src/"
+            "Attluh\\Parstead\\": "src/"
         }
     },
     "bin": [
