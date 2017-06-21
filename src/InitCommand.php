@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Homestead;
+namespace Attluh\Parstead;
 
 use InvalidArgumentException;
 use Symfony\Component\Console\Command\Command;
