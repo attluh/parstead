@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Homestead;
+namespace Attluh\Parstead;
 
 use Symfony\Component\Process\Process;
 use Symfony\Component\Console\Command\Command;
