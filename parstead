@@ -21,19 +21,19 @@ function homestead_path()
 
 $app = new Symfony\Component\Console\Application('Laravel Homestead', '2.2.2');
 
-$app->add(new Laravel\Homestead\DestroyCommand);
-$app->add(new Laravel\Homestead\EditCommand);
-$app->add(new Laravel\Homestead\HaltCommand);
-$app->add(new Laravel\Homestead\InitCommand);
-$app->add(new Laravel\Homestead\MakeCommand);
-$app->add(new Laravel\Homestead\ProvisionCommand);
-$app->add(new Laravel\Homestead\ResumeCommand);
-$app->add(new Laravel\Homestead\RunCommand);
-$app->add(new Laravel\Homestead\UpCommand);
-$app->add(new Laravel\Homestead\UpdateCommand);
-$app->add(new Laravel\Homestead\SshCommand);
-$app->add(new Laravel\Homestead\SshConfigCommand);
-$app->add(new Laravel\Homestead\StatusCommand);
-$app->add(new Laravel\Homestead\SuspendCommand);
+$app->add(new Attluh\Parstead\DestroyCommand);
+$app->add(new Attluh\Parstead\EditCommand);
+$app->add(new Attluh\Parstead\HaltCommand);
+$app->add(new Attluh\Parstead\InitCommand);
+$app->add(new Attluh\Parstead\MakeCommand);
+$app->add(new Attluh\Parstead\ProvisionCommand);
+$app->add(new Attluh\Parstead\ResumeCommand);
+$app->add(new Attluh\Parstead\RunCommand);
+$app->add(new Attluh\Parstead\UpCommand);
+$app->add(new Attluh\Parstead\UpdateCommand);
+$app->add(new Attluh\Parstead\SshCommand);
+$app->add(new Attluh\Parstead\SshConfigCommand);
+$app->add(new Attluh\Parstead\StatusCommand);
+$app->add(new Attluh\Parstead\SuspendCommand);
 
 $app->run();
